@@ -1,7 +1,7 @@
-
+import Header from './components/Header'
 
 function App() {
-  return <p>hello world</p>
+  return <Header/>
  
 }
 

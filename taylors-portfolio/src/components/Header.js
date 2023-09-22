@@ -9,40 +9,33 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
+import { Link } from "react-router-dom"; // Import Link
+
 import LogoImage from "../Assets/images/PortfolioLogo.png";
 
 const pages = ["About", "Portfolio", "Resume", "Contact"];
+const pageRoutes = ["/about", "/portfolio", "/resume", "/contact"]; // Define corresponding route paths
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
     <AppBar position="static" sx={{ backgroundColor: '#232E34' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        
           <Typography
             variant="h6"
             noWrap
-            component="a"
-            href="/"
+            component={Link} // Use Link instead of anchor tag
+            to="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -58,7 +51,6 @@ function Header() {
               alt="Logo"
               style={{ width: "100px", height: "40px", marginRight: "8px" }}
             />
-            
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -90,9 +82,11 @@ function Header() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
+              {pages.map((page, index) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Button component={Link} to={pageRoutes[index]} sx={{ color: "inherit" }}>
+                    {page}
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>
@@ -100,8 +94,8 @@ function Header() {
           <Typography
             variant="h5"
             noWrap
-            component="a"
-            href="/"
+            component={Link} // Use Link instead of anchor tag
+            to="/"
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -118,14 +112,13 @@ function Header() {
               alt="Logo"
               style={{ width: "100px", height: "40px", marginRight: "8px" }}
             />
-            {/* Replace with your logo */}
-            
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+            {pages.map((page, index) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                component={Link} // Use Link instead of anchor tag
+                to={pageRoutes[index]}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}

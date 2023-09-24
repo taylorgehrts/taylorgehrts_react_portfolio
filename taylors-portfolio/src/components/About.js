@@ -1,6 +1,8 @@
 import React from "react";
 import { Grid, Card, CardContent, Typography, styled } from "@mui/material";
 import BioPic from "../Assets/images/TaylorPic.png";
+import "./About.css"; // Import the CSS file
+
 
 const LeftColumn = styled(Grid)(({ theme }) => ({
   order: 1, // Default order for left column
@@ -15,37 +17,6 @@ const RightColumn = styled(Grid)(({ theme }) => ({
     order: 1, // New order for right column on smaller screens
   },
 }));
-
-const StyledCard = styled(Card)(({ theme }) => ({
-  height: "100%",
-  margin: "16px", // Add margin to create inset from the screen edge
-  backgroundColor: "#232E34", // Background color
-  color: "#D7CCDA", // Regular text color
-  "& .highlight": {
-    color: "#FFBA49", // Highlighted text color
-  },
-  "& .styledText": {
-    color: "#00A878", // Styled text color
-  },
-}));
-
-const StyledImage = styled("img")({
-  maxWidth: "100%",
-  maxHeight: "100%",
-  objectFit: "contain", // To fit the image inside the card
-  // Center the image horizontally and vertically
-  display: "block", // Ensure block-level display for the image
-  margin: "0 auto", // Center horizontally
-});
-
-const StyledText = styled(Typography)({
-  color: "#00A878", // Text color for alert text
-});
-
-const StyledAlertText = styled(Typography)({
-  color: "#FFBA49", // Text color for alert-like text
-});
-
 function About() {
   return (
     <Grid container spacing={2}>
@@ -53,35 +24,35 @@ function About() {
         <Grid container direction="column" spacing={2}>
           {/* First Card */}
           <Grid item>
-            <StyledCard>
-              <StyledImage src={BioPic} alt="Card 1" />
-            </StyledCard>
+            <Card className="StyledCard">
+              <img src={BioPic} alt="Card 1" className="StyledImage" />
+            </Card>
           </Grid>
           {/* Second Card */}
           <Grid item>
-            <StyledCard>
+            <Card className="StyledCard">
               <CardContent>
-                <StyledText variant="h3">LINKS</StyledText>
-                <a href="https://github.com/taylorgehrts" style={{ color: "#FFBA49", textDecoration: "none", }}target="_blank">
+                <Typography variant="h3" className="StyledText">LINKS</Typography>
+                <a href="https://github.com/taylorgehrts" className="StyledAlertText" target="_blank" rel="noopener noreferrer">
                   GitHub
                 </a><br></br>
-                <a href="https://linkedin.com/in/taylor-gehrts-8768b1196" style={{ color: "#FFBA49", textDecoration: "none", }}target="_blank">
+                <a href="https://linkedin.com/in/taylor-gehrts-8768b1196" className="StyledAlertText" target="_blank" rel="noopener noreferrer">
                   LinkedIn
                 </a><br></br>
-                <a href="https://soundcloud.com/arohanpdx" style={{ color: "#FFBA49" , textDecoration: "none",}}target="_blank">
+                <a href="https://soundcloud.com/arohanpdx" className="StyledAlertText" target="_blank" rel="noopener noreferrer">
                   Soundcloud
                 </a><br></br>
-                <a href="https://mordax.net" style={{ color: "#FFBA49", textDecoration: "none", }}target="_blank">
+                <a href="https://mordax.net" className="StyledAlertText" target="_blank" rel="noopener noreferrer">
                   Mordax
                 </a>
               </CardContent>
-            </StyledCard>
+            </Card>
           </Grid>
           {/* Third Card */}
           <Grid item>
-            <StyledCard>
+            <Card className="StyledCard">
               <CardContent>
-                <StyledText variant="h3">SKILLS</StyledText>
+                <Typography variant="h3" className="StyledText">SKILLS</Typography>
                 <h4 className="highlight">WEB DEVELOPMENT</h4>
                 <p>
                   HTML, CSS, GIT, JAVASCRIPT, NODE.JS, EXPRESS.JS, SQL, NOSQL,
@@ -92,13 +63,13 @@ function About() {
                   ABLETON, MODULAR SYNTH, MIDI, HARDWARE, ENGINEERING, COMPOSING
                 </p>
               </CardContent>
-            </StyledCard>
+            </Card>
           </Grid>
         </Grid>
       </LeftColumn>
 
       <RightColumn item xs={12} md={8}>
-        <StyledCard>
+        <Card className="StyledCard">
           <CardContent>
             <Typography className="highlight" variant="h3">
               ABOUT ME
@@ -137,7 +108,7 @@ function About() {
               pragmatic approach.
             </p>
           </CardContent>
-        </StyledCard>
+        </Card>
       </RightColumn>
     </Grid>
   );

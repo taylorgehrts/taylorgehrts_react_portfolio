@@ -1,6 +1,6 @@
 /* About.css */
 .StyledCard {
-  height: 99%;
+  height: auto;
   margin: 10px;
   background-color: #232E34 !important; 
   color: #D7CCDA !important;
@@ -33,3 +33,10 @@
   color: #FFBA49;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  filter: brightness(.9);
+}

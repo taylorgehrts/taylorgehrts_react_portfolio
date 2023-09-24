@@ -13,6 +13,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Contact from './components/Contact'; 
+import Footer from './components/Footer';
 
 function App() {
   const style = {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

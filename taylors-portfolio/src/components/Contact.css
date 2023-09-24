@@ -1,0 +1,42 @@
+/* Center the form vertically and horizontally */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+}
+
+/* Style the card */
+.contact-card {
+  margin: 16px auto; /* Center the card horizontally */
+  background-color: #232e34 !important;
+  color: #d7ccda !important;
+  padding: 16px;
+  text-align: center;
+  width: 80vw;
+}
+
+/* Style form elements */
+.contact-card .MuiTextField-root .MuiOutlinedInput-root {
+  color: #d7ccda !important;
+  border-color: #d7ccda !important;
+}
+
+.contact-card .MuiTextField-root .MuiInputLabel-root {
+  color: #d7ccda !important;
+}
+
+.contact-card .MuiTextField-root .MuiFormHelperText-root {
+  color: #ffba49;
+}
+
+.contact-card .MuiButton-root {
+  background-color: #ffba49 !important;
+}
+
+/* Prevent autofill styles */
+.contact-card .MuiTextField-root input:-webkit-autofill {
+  -webkit-text-fill-color: #d7ccda !important; /* Text color */
+  -webkit-box-shadow: 0 0 0px 1000px #232e34 inset !important; /* Background color */
+  transition: background-color 5000s ease-in-out 0s; /* Override autofill background transition */
+}

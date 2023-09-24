@@ -4,6 +4,7 @@
     color: #FFBA49; /* Set the text color */
     text-align: center;
     padding: 20px 0;
+    margin-top: 16px; /* Add top margin to the footer */
   }
   
   .footer-icons {

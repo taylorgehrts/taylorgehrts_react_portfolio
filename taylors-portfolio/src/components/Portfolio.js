@@ -25,30 +25,30 @@ function Portfolio() {
       githubLink: 'https://github.com/taylorgehrts/Whats_On_Hand_Cocktail_Search',
     },
     {
-      title: 'Project 3',
+      title: 'HTML Portfolio',
       imageSrc: Project3Img,
-      deployedLink: 'https://example.com/project2',
-      githubLink: 'https://github.com/user/project2',
+      deployedLink: 'https://taylorgehrts.github.io/Taylors-Portfolio-App/',
+      githubLink: 'https://github.com/taylorgehrts/Taylors-Portfolio-App',
     },
     {
-      title: 'Project 4',
+      title: 'Code Quiz',
       imageSrc: Project4Img,
-      deployedLink: 'https://example.com/project2',
-      githubLink: 'https://github.com/user/project2',
+      deployedLink: 'https://taylorgehrts.github.io/Taylors_code_quiz/',
+      githubLink: 'https://github.com/taylorgehrts/Taylors_code_quiz',
     },
     {
-      title: 'Project 5',
+      title: 'Weather Forcast App',
       imageSrc: Project5Img,
-      deployedLink: 'https://example.com/project2',
-      githubLink: 'https://github.com/user/project2',
+      deployedLink: 'https://taylorgehrts.github.io/Taylors_weather_app/',
+      githubLink: 'https://github.com/taylorgehrts/Taylors_weather_app',
     },
     {
-      title: 'Project 6',
+      title: 'Work Day Scheduler',
       imageSrc: Project6Img,
-      deployedLink: 'https://example.com/project2',
-      githubLink: 'https://github.com/user/project2',
+      deployedLink: 'https://taylorgehrts.github.io/Taylors_Calander_app/',
+      githubLink: 'https://github.com/taylorgehrts/Taylors_Calander_app',
     },
-    // Add more projects as needed
+   
   ];
 
   return (

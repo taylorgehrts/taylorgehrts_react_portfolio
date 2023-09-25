@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -9,8 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import { Link, NavLink } from "react-router-dom"; // Import NavLink for active links
-import "./Header.css";
+import { Link } from "react-router-dom"; // Import Link
 
 import LogoImage from "../Assets/images/PortfolioLogo.png";
 
@@ -35,7 +34,7 @@ function Header() {
           <Typography
             variant="h6"
             noWrap
-            component={Link}
+            component={Link} // Use Link instead of anchor tag
             to="/"
             sx={{
               mr: 2,
@@ -85,13 +84,7 @@ function Header() {
             >
               {pages.map((page, index) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Button
-                    component={NavLink} // Use NavLink for active links
-                    to={pageRoutes[index]}
-                    activeclassname="active-link" // Define a class name for active links
-                    activestyle={{ fontWeight: "bold", color: "red" }} // Define custom styling for active links
-                    sx={{ color: "inherit" }}
-                  >
+                  <Button component={Link} to={pageRoutes[index]} sx={{ color: "inherit" }}>
                     {page}
                   </Button>
                 </MenuItem>
@@ -101,7 +94,7 @@ function Header() {
           <Typography
             variant="h5"
             noWrap
-            component={Link}
+            component={Link} 
             to="/"
             sx={{
               mr: 2,
@@ -124,10 +117,8 @@ function Header() {
             {pages.map((page, index) => (
               <Button
                 key={page}
-                component={NavLink} // Use NavLink for active links
+                component={Link} 
                 to={pageRoutes[index]}
-                activeclassname="active-link" // Define a class name for active links
-                activestyle={{ fontWeight: "bold", color: "red" }} // Define custom styling for active links
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}
@@ -139,5 +130,4 @@ function Header() {
     </AppBar>
   );
 }
-
 export default Header;

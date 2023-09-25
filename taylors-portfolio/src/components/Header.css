@@ -1,4 +1,10 @@
-.active-link {
-    color: #ffba49 !important; /* Your active link color */
-  }
-  
+
+/* Header.css */
+
+/* Style for the active NavLink elements */
+.nav-link {
+  font-weight: bold; /* Make the text bold for active links */
+  color: red; /* Change the text color for active links to red */
+}
+
+/* Add any other styles you want for your navigation links here */

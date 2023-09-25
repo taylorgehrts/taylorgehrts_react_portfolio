@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Card, CardContent, Typography, styled } from "@mui/material";
 import BioPic from "../Assets/images/TaylorPic.png";
-import "./About.css"; // Import the CSS file
+import "./About.css"; 
 
 
 const LeftColumn = styled(Grid)(({ theme }) => ({

@@ -8,7 +8,6 @@ import {
 import CssBaseline from '@mui/material/CssBaseline';
 
 import Header from './components/Header';
-import Home from './components/About';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
@@ -17,15 +16,15 @@ import Footer from './components/Footer';
 
 function App() {
   const style = {
-    backgroundColor: '#404A47', // Set the background color here
+    backgroundColor: '#404A47', 
     color: '#FFBA49',
   };
 
   return (
     
-    <Router>
+    <Router basename="/taylorgehrts_react_portfolio">
       <CssBaseline />
-      <div style={style}> {/* Apply the background color to a div */}
+      <div style={style}> 
         <Header />
         <Routes>
           <Route path="/" element={<About />} />

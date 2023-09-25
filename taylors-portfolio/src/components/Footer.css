@@ -1,10 +1,9 @@
-/* footer.css */
 .footer {
-    background-color: #232E34; /* Set the background color */
-    color: #FFBA49; /* Set the text color */
+    background-color: #232E34; 
+    color: #FFBA49; 
     text-align: center;
     padding: 20px 0;
-    margin-top: 16px; /* Add top margin to the footer */
+    margin-top: 16px; 
   }
   
   .footer-icons {
@@ -14,11 +13,11 @@
   }
   
   .footer-icon {
-    width: auto; /* Adjust the size of the icons as needed */
-    height: 30px; /* Adjust the size of the icons as needed */
+    width: auto; 
+    height: 30px; 
   }
   
   .footer-icon:hover {
-    filter: brightness(1.5); /* Adjust the hover effect as desired */
+    filter: brightness(1.5); 
   }
   

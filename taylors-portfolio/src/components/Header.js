@@ -9,12 +9,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import { Link } from "react-router-dom"; // Import Link
+import { Link } from "react-router-dom";
 
 import LogoImage from "../Assets/images/PortfolioLogo.png";
 
 const pages = ["About", "Portfolio", "Resume", "Contact"];
-const pageRoutes = ["/about", "/portfolio", "/resume", "/contact"]; // Define corresponding route paths
+const pageRoutes = ["/about", "/portfolio", "/resume", "/contact"];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -28,13 +28,13 @@ function Header() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#232E34' }}>
+    <AppBar position="static" sx={{ backgroundColor: "#232E34" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
             variant="h6"
             noWrap
-            component={Link} // Use Link instead of anchor tag
+            component={Link}
             to="/"
             sx={{
               mr: 2,
@@ -84,7 +84,11 @@ function Header() {
             >
               {pages.map((page, index) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Button component={Link} to={pageRoutes[index]} sx={{ color: "inherit" }}>
+                  <Button
+                    component={Link}
+                    to={pageRoutes[index]}
+                    sx={{ color: "inherit" }}
+                  >
                     {page}
                   </Button>
                 </MenuItem>
@@ -94,7 +98,7 @@ function Header() {
           <Typography
             variant="h5"
             noWrap
-            component={Link} 
+            component={Link}
             to="/"
             sx={{
               mr: 2,
@@ -117,7 +121,7 @@ function Header() {
             {pages.map((page, index) => (
               <Button
                 key={page}
-                component={Link} 
+                component={Link}
                 to={pageRoutes[index]}
                 sx={{ my: 2, color: "white", display: "block" }}
               >

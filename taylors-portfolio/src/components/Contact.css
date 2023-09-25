@@ -1,4 +1,4 @@
-/* Center the form vertically and horizontally */
+
 .contact-container {
   display: flex;
   justify-content: center;
@@ -6,9 +6,9 @@
   min-height: 85vh;
 }
 
-/* Style the card */
+
 .contact-card {
-  margin: 16px auto; /* Center the card horizontally */
+  margin: 16px auto; 
   background-color: #232e34 !important;
   color: #d7ccda !important;
   padding: 16px;
@@ -16,7 +16,7 @@
   width: 80vw;
 }
 
-/* Style form elements */
+
 .contact-card .MuiTextField-root .MuiOutlinedInput-root {
   color: #d7ccda !important;
   border-color: #d7ccda !important;
@@ -34,9 +34,9 @@
   background-color: #ffba49 !important;
 }
 
-/* Prevent autofill styles */
+/* override autofill stuff */
 .contact-card .MuiTextField-root input:-webkit-autofill {
-  -webkit-text-fill-color: #d7ccda !important; /* Text color */
-  -webkit-box-shadow: 0 0 0px 1000px #232e34 inset !important; /* Background color */
-  transition: background-color 5000s ease-in-out 0s; /* Override autofill background transition */
+  -webkit-text-fill-color: #d7ccda !important;
+  -webkit-box-shadow: 0 0 0px 1000px #232e34 inset !important;
+  transition: background-color 5000s ease-in-out 0s; 
 }

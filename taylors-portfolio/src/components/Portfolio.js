@@ -1,7 +1,6 @@
-// Portfolio.js
 import React from 'react';
-import Project from './Project'; // Import the Project component
-import './Portfolio.css'; // Import your Portfolio.css file
+import Project from './Project';
+import './Portfolio.css'; 
 import { Grid } from '@mui/material';
 import Project1Img from "../Assets/images/kiddoKare.png";
 import Project2Img from "../Assets/images/whatsOnHand.png";

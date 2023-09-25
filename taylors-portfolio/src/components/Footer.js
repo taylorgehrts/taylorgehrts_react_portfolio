@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // Import the CSS file
+import './Footer.css'; 
 import gitHubLogo from "../Assets/images/githubLogo.png" ;
 import soundCloudLogo from "../Assets/images/soundCloudLogo.png" ;
 import linkedInLogo from "../Assets/images/linkedInLogo.png" ;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, TextField, Button, Card, CardContent, Typography } from '@mui/material';
-import './Contact.css'; // Import your Contact.css file
+import './Contact.css'; 
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -15,7 +15,7 @@ function Contact() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
-    // Clear validation errors when the user starts typing
+  
     setErrors({ ...errors, [name]: '' });
   };
 
@@ -27,7 +27,7 @@ function Contact() {
   const handleBlur = (e) => {
     const { name, value } = e.target;
 
-    // Check if the field is empty and display an error message
+
     if (!value.trim()) {
       setErrors({ ...errors, [name]: 'This field is required' });
     }
@@ -50,12 +50,12 @@ function Contact() {
       newErrors.message = 'Message is required';
     }
 
-    // If there are errors, set them in the state
+
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
-      // Form is valid, you can submit the data or perform further actions here
-      // For now, we'll just log the form data
+  
+      // For now, log the form data
       console.log('Form Data:', formData);
     }
   };
@@ -80,7 +80,7 @@ function Contact() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              onBlur={handleBlur} // Handle onBlur event
+              onBlur={handleBlur} 
               error={Boolean(errors.name)}
               helperText={errors.name}
               
@@ -91,7 +91,7 @@ function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              onBlur={handleBlur} // Handle onBlur event
+              onBlur={handleBlur} 
               error={Boolean(errors.email)}
               helperText={errors.email}
             />
@@ -103,7 +103,7 @@ function Contact() {
               rows={4}
               value={formData.message}
               onChange={handleChange}
-              onBlur={handleBlur} // Handle onBlur event
+              onBlur={handleBlur} 
               error={Boolean(errors.message)}
               helperText={errors.message}
             />

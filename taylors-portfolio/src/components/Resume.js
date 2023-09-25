@@ -3,16 +3,16 @@ import { Grid, Card, CardContent, Typography, styled } from "@mui/material";
 import "./Resume.css";
 
 const LeftColumn = styled(Grid)(({ theme }) => ({
-  order: 1, // Default order for left column
+  order: 1,
   [theme.breakpoints.down("sm")]: {
-    order: 2, // New order for left column on smaller screens
+    order: 2,
   },
 }));
 
 const RightColumn = styled(Grid)(({ theme }) => ({
-  order: 2, // Default order for right column
+  order: 2,
   [theme.breakpoints.down("sm")]: {
-    order: 1, // New order for right column on smaller screens
+    order: 1,
   },
 }));
 
@@ -21,27 +21,26 @@ function Resume() {
     <Grid container spacing={2}>
       <LeftColumn item xs={12} md={4}>
         <Grid container direction="column" spacing={2}>
-          {/* First Card */}
           <Grid item>
             <Card className="StyledCard">
               <CardContent>
-                <h4 className="highlight">Taylor Gehrts</h4>
+                <Typography variant="h4" className="highlight">
+                  Taylor Gehrts
+                </Typography>
                 <p>
-                  Dirschauer Str 7<br></br>
-                  10245 Berlin DE<br></br>
+                  Dirschauer Str 7<br />
+                  10245 Berlin DE<br />
                   +49 173 9713567
+                  <br />
+                  <a href="mailto:taylorgehrts@gmail.com">taylorgehrts@gmail.com</a>
                 </p>
-                <a href="mailto:taylorgehrts@gmail.com">
-                  taylorgehrts@gmail.com
-                </a>
               </CardContent>
             </Card>
           </Grid>
-          {/* Second Card */}
           <Grid item>
             <Card className="StyledCard">
               <CardContent>
-                <Typography variant="h3" className="StyledText">
+                <Typography variant="h4" className="StyledText">
                   LINKS
                 </Typography>
                 <a
@@ -52,7 +51,7 @@ function Resume() {
                 >
                   GitHub
                 </a>
-                <br></br>
+                <br />
                 <a
                   href="https://linkedin.com/in/taylor-gehrts-8768b1196"
                   className="StyledAlertText"
@@ -61,7 +60,7 @@ function Resume() {
                 >
                   LinkedIn
                 </a>
-                <br></br>
+                <br />
                 <a
                   href="https://soundcloud.com/arohanpdx"
                   className="StyledAlertText"
@@ -70,7 +69,7 @@ function Resume() {
                 >
                   Soundcloud
                 </a>
-                <br></br>
+                <br />
                 <a
                   href="https://mordax.net"
                   className="StyledAlertText"
@@ -79,7 +78,7 @@ function Resume() {
                 >
                   Mordax
                 </a>
-                <br></br>
+                <br />
                 <a
                   href="https://drive.google.com/file/d/1z-2kvygihSYoIcFuluxoiY8mhxXIFuO3/view?usp=drive_link"
                   className="StyledAlertText"
@@ -88,23 +87,25 @@ function Resume() {
                 >
                   Resume
                 </a>
-                
               </CardContent>
             </Card>
           </Grid>
-          {/* SKILLS*/}
           <Grid item>
             <Card className="StyledCard">
               <CardContent>
-                <Typography variant="h3" className="StyledText">
+                <Typography variant="h4" className="StyledText">
                   SKILLS
                 </Typography>
-                <h4 className="highlight">WEB DEVELOPMENT</h4>
+                <Typography variant="h6" className="highlight">
+                  WEB DEVELOPMENT
+                </Typography>
                 <p>
                   HTML, CSS, GIT, JAVASCRIPT, NODE.JS, EXPRESS.JS, SQL, NOSQL,
                   REACT, GRAPHQL
                 </p>
-                <h4 className="highlight">MUSIC</h4>
+                <Typography variant="h6" className="highlight">
+                  MUSIC
+                </Typography>
                 <p>
                   ABLETON, MODULAR SYNTH, MIDI, HARDWARE, ENGINEERING, COMPOSING
                 </p>
@@ -117,7 +118,7 @@ function Resume() {
       <RightColumn item xs={12} md={8}>
         <Card className="StyledCard">
           <CardContent>
-            <Typography className="StyledText" variant="h6">
+            <Typography className="StyledText" variant="h4">
               Objective
             </Typography>
             <p>
@@ -127,16 +128,16 @@ function Resume() {
               Development Bootcamp at the University of Oregon, I have gained
               proficiency in HTML, CSS, JavaScript, Node.js, Express.js, SQL,
               NoSQL, React, and Progressive Web App (PWA) development.
-              <br></br>
-              <br></br>
-              <Typography className="StyledText" variant="h6">
+              </p>
+              <br /><br />
+              <Typography className="StyledText" variant="h4">
                 Experience
               </Typography>
               <Typography variant="h6">
                 Hinterland Bar and Carts / General Manager
               </Typography>
               2021-05 - 2023-08, Portland, US
-              <br></br>
+              <br />
               <ul>
                 <li>
                   Consulted on the establishment's design and layout, overseeing
@@ -151,18 +152,15 @@ function Resume() {
                   day-to-day operational tasks.
                 </li>
                 <li>
-                  Visit:{" "}
-                  <a href="https://hinterlandpdx.com" target="blank">
-                    www.hinterlandpdx.com
-                  </a>
+                  Visit: <a href="https://hinterlandpdx.com" target="_blank" rel="noopener noreferrer">www.hinterlandpdx.com</a>
                 </li>
               </ul>
-              <br></br>
+              <br />
               <Typography variant="h6">
                 Masia / Assistant General Manager
               </Typography>
               2020-01 - 2020-12 Portland, US
-              <br></br>
+              <br />
               <ul>
                 <li>
                   Orchestrated front-of-house systems setup, including POS and
@@ -177,12 +175,12 @@ function Resume() {
                   pandemic.
                 </li>
               </ul>
-              <br></br>
+              <br />
               <Typography variant="h6">
                 Mordax Systems/ Co-Founder/Operator
               </Typography>
               2015-01 - 2018-04, Vancouver, US
-              <br></br>
+              <br />
               <ul>
                 <li>
                   Co-founded and operated a successful Modular Synthesizer
@@ -197,33 +195,27 @@ function Resume() {
                   Handled customer service, website design, and accounting.
                 </li>
                 <li>
-                  For more details, visit:{" "}
-                  <a href="https://mordax.net" target="blank">
-                    www.mordax.net
-                  </a>
+                  For more details, visit: <a href="https://mordax.net" target="_blank" rel="noopener noreferrer">www.mordax.net</a>
                 </li>
               </ul>
-              <Typography className="StyledText" variant="h6">
+              <Typography className="StyledText" variant="h4">
                 Education
               </Typography>
               <Typography variant="h6">
                 University of Oregon / Full Stack Development
               </Typography>
               04/2023- Present, Online
-              <br></br>
+              <br />
               <ul>
                 <li>
                   Enrolled in the Full Stack Development Bootcamp, gaining
                   expertise in various web technologies.
                 </li>
                 <li>
-                  Showcase of my work on GitHub:{" "}
-                  <a href="https://github.com/taylorgehrts" target="blank">
-                    https://github.com/
-                  </a>
+                  Showcase of my work on GitHub: <a href="https://github.com/taylorgehrts" target="_blank" rel="noopener noreferrer">https://github.com/</a>
                 </li>
               </ul>
-              <Typography className="StyledText" variant="h6">
+              <Typography className="StyledText" variant="h4">
                 Soft Skills
               </Typography>
               <ul>
@@ -238,7 +230,7 @@ function Resume() {
                 <li>English: Fluent</li>
                 <li>German: Basic, Enrolled in A2 class now</li>
               </ul>
-            </p>
+            
           </CardContent>
         </Card>
       </RightColumn>

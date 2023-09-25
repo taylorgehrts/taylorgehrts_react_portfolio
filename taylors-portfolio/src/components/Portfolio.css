@@ -1,0 +1,46 @@
+/* Portfolio.css */
+
+/* Style the Portfolio section */
+.portfolio {
+    padding: 20px;
+  }
+  
+  /* Style the projects container */
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Style the Project component */
+  .project {
+    background-color: #232E34 !important;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    flex: 0 0 calc(33.333% - 20px); /* Adjust the width for 3 projects per row */
+  }
+  
+  .project h3 {
+    font-size: 18px;
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .project .links {
+    margin-top: 10px;
+  }
+  
+  .project .links a {
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  

@@ -33,10 +33,10 @@
   color: #FFBA49;
 }
 
-a {
-  text-decoration: none;
+Link {
+  text-decoration: none !important;
 }
 
-a:hover {
+Link:hover {
   filter: brightness(.9);
 }

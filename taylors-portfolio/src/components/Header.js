@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -88,7 +88,8 @@ function Header() {
                   <Button
                     component={NavLink} // Use NavLink for active links
                     to={pageRoutes[index]}
-                    activeClassName="active-link" // Define a class name for active links
+                    activeclassname="active-link" // Define a class name for active links
+                    activestyle={{ fontWeight: "bold", color: "red" }} // Define custom styling for active links
                     sx={{ color: "inherit" }}
                   >
                     {page}
@@ -125,7 +126,8 @@ function Header() {
                 key={page}
                 component={NavLink} // Use NavLink for active links
                 to={pageRoutes[index]}
-                activeClassName="active-link" // Define a class name for active links
+                activeclassname="active-link" // Define a class name for active links
+                activestyle={{ fontWeight: "bold", color: "red" }} // Define custom styling for active links
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}

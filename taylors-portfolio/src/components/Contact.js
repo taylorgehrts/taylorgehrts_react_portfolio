@@ -61,7 +61,7 @@ function Contact() {
   };
 
   return (
-    <container className= "contact-container">
+    <div className= "contact-container">
     <Card className="contact-card">
       <CardContent>
         <Typography variant="h4">Contact</Typography>
@@ -114,7 +114,7 @@ function Contact() {
         </form>
       </CardContent>
     </Card>
-    </container>
+    </div>
     
   );
 }

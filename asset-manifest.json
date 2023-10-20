@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/taylorgehrts_react_portfolio/static/css/main.639d2b3b.css",
-    "main.js": "/taylorgehrts_react_portfolio/static/js/main.09144d1e.js",
+    "main.js": "/taylorgehrts_react_portfolio/static/js/main.ff2128c8.js",
+    "static/media/traxsonic.png": "/taylorgehrts_react_portfolio/static/media/traxsonic.dd26d3072da1a0750c66.png",
     "static/media/firstPortfolio.png": "/taylorgehrts_react_portfolio/static/media/firstPortfolio.b8090f1c2e5fde0f75e7.png",
     "static/media/kiddoKare.png": "/taylorgehrts_react_portfolio/static/media/kiddoKare.e6fe5d6224689da16e71.png",
     "static/media/TaylorPic.png": "/taylorgehrts_react_portfolio/static/media/TaylorPic.16af32e0178df2dc5db1.png",
     "static/media/weather.png": "/taylorgehrts_react_portfolio/static/media/weather.0f6020f72ef2a5ccf60f.png",
     "static/media/whatsOnHand.png": "/taylorgehrts_react_portfolio/static/media/whatsOnHand.776c4defe4c8eb3ddcf2.png",
     "static/media/calendar.png": "/taylorgehrts_react_portfolio/static/media/calendar.cec75f43a60fbfd45740.png",
-    "static/media/codeQuiz.png": "/taylorgehrts_react_portfolio/static/media/codeQuiz.d9b047c24099dab449a3.png",
     "static/media/PortfolioLogo.png": "/taylorgehrts_react_portfolio/static/media/PortfolioLogo.cbe4fc1fc1ff3d47d3a6.png",
     "index.html": "/taylorgehrts_react_portfolio/index.html",
     "main.639d2b3b.css.map": "/taylorgehrts_react_portfolio/static/css/main.639d2b3b.css.map",
-    "main.09144d1e.js.map": "/taylorgehrts_react_portfolio/static/js/main.09144d1e.js.map"
+    "main.ff2128c8.js.map": "/taylorgehrts_react_portfolio/static/js/main.ff2128c8.js.map"
   },
   "entrypoints": [
     "static/css/main.639d2b3b.css",
-    "static/js/main.09144d1e.js"
+    "static/js/main.ff2128c8.js"
   ]
 }

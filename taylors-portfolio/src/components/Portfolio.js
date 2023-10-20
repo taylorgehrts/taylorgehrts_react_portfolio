@@ -5,7 +5,7 @@ import { Grid } from '@mui/material';
 import Project1Img from "../Assets/images/kiddoKare.png";
 import Project2Img from "../Assets/images/whatsOnHand.png";
 import Project3Img from "../Assets/images/firstPortfolio.png";
-import Project4Img from "../Assets/images/codeQuiz.png";
+import Project4Img from "../Assets/images/traxsonic.png";
 import Project5Img from "../Assets/images/weather.png";
 import Project6Img from "../Assets/images/calendar.png";
 
@@ -30,10 +30,10 @@ function Portfolio() {
       githubLink: 'https://github.com/taylorgehrts/Taylors-Portfolio-App',
     },
     {
-      title: 'Code Quiz',
+      title: 'Traxsonic (Full Stack MERN APP)',
       imageSrc: Project4Img,
-      deployedLink: 'https://taylorgehrts.github.io/Taylors_code_quiz/',
-      githubLink: 'https://github.com/taylorgehrts/Taylors_code_quiz',
+      deployedLink: 'https://secure-basin-55131-a178bdac2e9e.herokuapp.com/',
+      githubLink: 'https://github.com/taylorgehrts/Traxonic',
     },
     {
       title: 'Weather Forcast App',

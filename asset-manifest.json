@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/taylorgehrts_react_portfolio/static/css/main.639d2b3b.css",
+    "main.css": "/taylorgehrts_react_portfolio/static/css/main.521c8ac4.css",
     "main.js": "/taylorgehrts_react_portfolio/static/js/main.ff2128c8.js",
     "static/media/traxsonic.png": "/taylorgehrts_react_portfolio/static/media/traxsonic.dd26d3072da1a0750c66.png",
     "static/media/firstPortfolio.png": "/taylorgehrts_react_portfolio/static/media/firstPortfolio.b8090f1c2e5fde0f75e7.png",
@@ -11,11 +11,11 @@
     "static/media/calendar.png": "/taylorgehrts_react_portfolio/static/media/calendar.cec75f43a60fbfd45740.png",
     "static/media/PortfolioLogo.png": "/taylorgehrts_react_portfolio/static/media/PortfolioLogo.cbe4fc1fc1ff3d47d3a6.png",
     "index.html": "/taylorgehrts_react_portfolio/index.html",
-    "main.639d2b3b.css.map": "/taylorgehrts_react_portfolio/static/css/main.639d2b3b.css.map",
+    "main.521c8ac4.css.map": "/taylorgehrts_react_portfolio/static/css/main.521c8ac4.css.map",
     "main.ff2128c8.js.map": "/taylorgehrts_react_portfolio/static/js/main.ff2128c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.639d2b3b.css",
+    "static/css/main.521c8ac4.css",
     "static/js/main.ff2128c8.js"
   ]
 }
